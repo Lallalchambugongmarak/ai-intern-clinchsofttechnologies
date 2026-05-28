@@ -1,0 +1,18 @@
+def weak_ai_sentiment(text):
+    positive_words = ['happy', 'good', 'great', 'awesome', 'love']
+    negative_words = ['sad', 'bad', 'terrible', 'hate', 'angry']
+    
+    text = text.lower()
+    pos_count = sum(word in text for word in positive_words)
+    neg_count = sum(word in text for word in negative_words)
+    
+    if pos_count > neg_count:
+        return "Positive sentiment detected. Task complete."
+    elif neg_count > pos_count:
+        return "Negative sentiment detected. Task complete."
+    else:
+        return "Neutral sentiment detected. Task complete."
+
+print(weak_ai_sentiment("I am happy today"))   # Positive sentiment detected
+print(weak_ai_sentiment("I am sad"))          # Negative sentiment detected  
+print(weak_ai_sentiment("What's 2+2?"))       # Neutral sentiment detected
