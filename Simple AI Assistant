@@ -1,0 +1,27 @@
+import datetime
+
+def ai_assistant():
+    print("AI Assistant: Hello! Type 'bye' to exit.")
+    
+    while True:
+        user_input = input("You: ").lower().strip()
+        
+        if user_input in ['hi', 'hello', 'hey']:
+            print("AI Assistant: Hello there! How can I help you?")
+            
+        elif 'weather' in user_input:
+            print("AI Assistant: I can't check live weather yet, but it looks sunny in my code!")
+            
+        elif 'time' in user_input:
+            current_time = datetime.datetime.now().strftime("%I:%M %p")
+            print(f"AI Assistant: The current time is {current_time}")
+            
+        elif user_input in ['bye', 'goodbye', 'exit']:
+            print("AI Assistant: Goodbye! Have a great day.")
+            break
+            
+        else:
+            print("AI Assistant: I can respond to greetings, weather, time, or goodbye.")
+
+if __name__ == "__main__":
+    ai_assistant()
