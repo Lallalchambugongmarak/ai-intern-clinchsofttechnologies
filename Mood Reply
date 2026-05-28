@@ -1,0 +1,11 @@
+def mood_reply(user_text):
+    text = user_text.lower()
+    if "i am sad" in text:
+        return "I'm sorry you're feeling down. Want to talk about it or hear a joke?"
+    elif "i am happy" in text:
+        return "That's awesome! I'm glad you're having a good day."
+    else:
+        return "Tell me more."
+
+print(mood_reply("I am sad"))
+print(mood_reply("I am happy"))
