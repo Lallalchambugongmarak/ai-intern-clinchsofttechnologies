@@ -1,0 +1,10 @@
+def chatbot(user_input):
+    responses = {
+        "hi": "Hello! How can I help you today?",
+        "bye": "Goodbye! Have a nice day!",
+        "thanks": "You're welcome!"
+    }
+    return responses.get(user_input.lower(), "Sorry, I don’t understand that.")
+
+print(chatbot("hi"))
+print(chatbot("thanks"))
