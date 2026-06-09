@@ -1,0 +1,17 @@
+print("AI Chat Greeting Bot")
+
+# 1. Ask for name and age
+name = input("What's your name? ")
+age = int(input("How old are you? "))
+
+# 2. If age < 18
+if age < 18:
+    print(f"Hello {name}, you are a young AI learner!")
+
+# 3. If 18 <= age < 30
+elif 18 <= age < 30:
+    print(f"Hello {name}, you are an aspiring AI professional!")
+
+# 4. Else, age >= 30
+else:
+    print(f"Hello {name}, AI has no age limit!")
