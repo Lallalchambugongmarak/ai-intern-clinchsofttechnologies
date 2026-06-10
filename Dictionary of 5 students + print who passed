@@ -1,0 +1,12 @@
+students = {
+    "Alice": 85,
+    "Bob": 42,
+    "Charlie": 67,
+    "Diana": 50,
+    "Eve": 38
+}
+
+print("Students who passed:")
+for name, marks in students.items():
+    if marks >= 50:
+        print(f"{name}: {marks}")
