@@ -1,0 +1,3 @@
+print(df["Name"])         # Column
+print(df.iloc[0])         # First row
+print(df[df["Marks"]>80]) # Filtering
