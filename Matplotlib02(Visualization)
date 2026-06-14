@@ -1,0 +1,4 @@
+data = [22,87,5,43,56,73,55,54,11,20]
+plt.hist(data, bins=5, color="blue", edgecolor="black")
+plt.title("Histogram Example")
+plt.show()
