@@ -1,0 +1,6 @@
+fruits = ["Apple","Banana","Mango"]
+values = [10,20,15]
+
+plt.bar(fruits, values, color="orange")
+plt.title("Fruit Count")
+plt.show()
